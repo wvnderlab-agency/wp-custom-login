@@ -1,12 +1,12 @@
 <?php
 
 /*
- * Plugin Name:     wvnderlab - Custom Login Url
- * Plugin URI:      https://github.com/wvnderlab-agency/wp-custom-login-url/
- * Description:     A simple WordPress plugin to customize the login URL for your WordPress site. This plugin allows you to change the default login URL from /wp-login.php to a custom URL of your choice, enhancing security and providing a more personalized experience for your users.
+ * Plugin Name:     wvnderlab - Custom Login
+ * Plugin URI:      https://github.com/wvnderlab-agency/wp-custom-login/
+ * Description:     A simple WordPress plugin to customize the login for your WordPress site. This plugin allows you to change the default login URL from /wp-login.php to a custom URL of your choice, enhancing security and providing a more personalized experience for your users.
  * Author:          Wvnderlab Agency
  * Author URI:      https://wvnderlab.com
- * Text Domain:     wvnderlab-custom-login-url
+ * Text Domain:     wvnderlab-custom-login
  * Version:         0.1.0
  */
 
@@ -21,7 +21,7 @@
 
 declare( strict_types=1 );
 
-namespace WvnderlabAgency\CustomLoginUrl;
+namespace WvnderlabAgency\CustomLogin;
 
 use WP_Query;
 
@@ -46,7 +46,7 @@ function custom_login_slug(): string {
 	 * @return string The filtered custom login slug.
 	 */
 	$slug = (string) apply_filters(
-		'wvnderlab/custom-login-url/slug',
+		'wvnderlab/custom-login/slug',
 		$slug
 	);
 
@@ -309,7 +309,7 @@ function custom_login_logo(): void {
 	 * @return string
 	 */
 	$background_image = (string) apply_filters(
-		'wvnderlab/custom-login-url/login-logo-background-image',
+		'wvnderlab/custom-login/login-logo-background-image',
 		$custom_logo_url ?? $site_icon_url
 	);
 
@@ -320,7 +320,7 @@ function custom_login_logo(): void {
 	 * @return string
 	 */
 	$border_radius = (string) apply_filters(
-		'wvnderlab/custom-login-url/login-logo-border-radius',
+		'wvnderlab/custom-login/login-logo-border-radius',
 		$custom_logo_url ? '0' : '8px'
 	);
 
@@ -331,7 +331,7 @@ function custom_login_logo(): void {
 	 * @return string
 	 */
 	$width = (string) apply_filters(
-		'wvnderlab/custom-login-url/login-logo-width',
+		'wvnderlab/custom-login/login-logo-width',
 		$custom_logo_url ? 'auto' : '80px'
 	);
 

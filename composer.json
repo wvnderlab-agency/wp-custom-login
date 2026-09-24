@@ -1,6 +1,6 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "wvnderlab-agency/wp-custom-login-url",
+    "name": "wvnderlab-agency/wp-custom-login",
     "description": "A simple WordPress mu-plugin to disable tags.",
     "type": "wordpress-muplugin",
     "license": "MIT",
@@ -11,8 +11,8 @@
         "wordpress-plugin"
     ],
     "support": {
-        "issues": "https://github.com/wvnderlab-agency/wp-custom-login-url/issues",
-        "source": "https://github.com/wvnderlab-agency/wp-custom-login-url"
+        "issues": "https://github.com/wvnderlab-agency/wp-custom-login/issues",
+        "source": "https://github.com/wvnderlab-agency/wp-custom-login"
     },
     "authors": [
         {
