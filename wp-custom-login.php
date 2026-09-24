@@ -35,9 +35,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return string
  */
 function custom_login_slug(): string {
-	$slug = defined( 'WVNDERLAB_CUSTOM_LOGIN_URL_SLUG' )
-		? constant( 'WVNDERLAB_CUSTOM_LOGIN_URL_SLUG' )
-		: 'dierck-login';
+	$slug = defined( 'WV_CUSTOM_LOGIN_PATH' )
+		? constant( 'WV_CUSTOM_LOGIN_PATH' )
+		: 'admin-login';
 
 	/**
 	 * Filter: The custom login slug.

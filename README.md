@@ -36,13 +36,13 @@ composer require wvnderlab-agency/wp-custom-login
 
 ### Config
 
-### WVNDERLAB_CUSTOM_LOGIN_URL_SLUG *(Default: null)*
+### WV_CUSTOM_LOGIN_PATH *(Default: null)*
 
 This constant allows you to set a custom login URL slug. If not defined, the default slug 'admin-login' will be used.
 
 ```php
 // define the custom login URL slug
-define( 'WVNDERLAB_CUSTOM_LOGIN_URL_SLUG', 'custom-login' );
+define( 'WV_CUSTOM_LOGIN_PATH', 'custom-login' );
 ```
 
 ### Filter Hooks
